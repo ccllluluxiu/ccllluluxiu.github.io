@@ -1,0 +1,40 @@
+/* img.css */
+.img-responsive {
+    max-width: 100%;  /* 图片宽度最大为其容器的宽度 */
+    height: auto;      /* 高度自动调整以保持宽高比 */
+    border: 2px solid #ccc; /* 添加边框样式（可选） */
+    padding: 5px; /* 添加内边距（可选） */
+}
+
+
+
+/* 新增样式 */
+#carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* 根据需要设置宽度 */
+    margin: auto;
+}
+.slide {
+    display: none; /* 默认隐藏所有图片 */
+}
+.active {
+    display: block; /* 只有活动的图片可见 */
+}
+.btn {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn.prev {
+    left: 10px;
+}
+.btn.next {
+    right: 10px;
+}
